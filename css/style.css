@@ -1,0 +1,59 @@
+/* Variables */
+body {
+  background: #2a333c; }
+
+.card {
+  background: #314150; }
+  .card .card-header {
+    background: #2c3a47; }
+
+.navbar-dashboard {
+  background: #03aaff; }
+
+footer {
+  background: #03aaff;
+  height: 150px; }
+
+/* SideBar */
+#sidebar-wrapper {
+  z-index: 1;
+  position: fixed;
+  width: 0;
+  height: 100%;
+  overflow-y: hidden;
+  background: #2a333c;
+  border: 2px solid #03aaff;
+  opacity: 0.9;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+/* Main Content */
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+/* Cambia el ancho de la barra lateral para mostrarlo */
+#wrapper.menuDisplayed #sidebar-wrapper {
+  width: 250px; }
+
+#wrapper.menuDisplayed #page-content-wrapper {
+  padding-left: 250px; }
+
+/* Siderbar styling */
+.sidebar-nav {
+  padding: 0;
+  list-style: none; }
+  .sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px; }
+    .sidebar-nav li a {
+      display: block;
+      text-decoration: none;
+      color: #ddd; }
+      .sidebar-nav li a a:hover {
+        background: #03a6ff; }
+
+/*# sourceMappingURL=style.css.map */

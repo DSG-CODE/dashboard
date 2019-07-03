@@ -1,0 +1,73 @@
+/* Variables */
+@import "variables";
+body{
+    background: $primary;
+}
+
+.card{
+    background:$light;
+    .card-header{
+        background: $light-dark;
+    }
+}
+
+.navbar-dashboard{
+    background: $warning;
+}
+
+footer{
+    background: $warning;
+    height: 150px;
+}
+
+/* SideBar */
+#sidebar-wrapper{
+    z-index: 1;
+    position: fixed;
+    width: 0;
+    height: 100%;
+    overflow-y: hidden;
+    background: $primary;
+    border: 2px solid $warning;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+
+/* Main Content */
+#page-content-wrapper{
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+/* Cambia el ancho de la barra lateral para mostrarlo */
+#wrapper.menuDisplayed #sidebar-wrapper{
+    width: 250px;
+}
+
+#wrapper.menuDisplayed #page-content-wrapper{
+    padding-left: 250px;
+}
+
+/* Siderbar styling */
+.sidebar-nav{
+    padding: 0;
+    list-style: none;
+
+    li{
+        text-indent: 20px;
+        line-height: 40px;
+
+        a{
+            display:block;
+            text-decoration: none;
+            color: #ddd;
+
+            a:hover{
+                background: #03a6ff;
+            }
+        }
+    }
+}
